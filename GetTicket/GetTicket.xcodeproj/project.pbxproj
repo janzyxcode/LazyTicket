@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56B64F6920052128000E0494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F6820052128000E0494 /* AppDelegate.swift */; };
+		56B64F6B20052128000E0494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F6A20052128000E0494 /* ViewController.swift */; };
+		56B64F6D20052128000E0494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B64F6C20052128000E0494 /* Assets.xcassets */; };
+		56B64F7020052128000E0494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B64F6E20052128000E0494 /* Main.storyboard */; };
+		56B64F7C20052129000E0494 /* GetTicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F7B20052129000E0494 /* GetTicketTests.swift */; };
+		56B64F8720052129000E0494 /* GetTicketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F8620052129000E0494 /* GetTicketUITests.swift */; };
+		56B64FC0200529C1000E0494 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B64FBE200529C1000E0494 /* MainViewController.xib */; };
+		56B64FC1200529C1000E0494 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64FBF200529C1000E0494 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56B64F7820052128000E0494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56B64F5D20052128000E0494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56B64F6420052128000E0494;
+			remoteInfo = GetTicket;
+		};
+		56B64F8320052129000E0494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56B64F5D20052128000E0494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56B64F6420052128000E0494;
+			remoteInfo = GetTicket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56B64F6520052128000E0494 /* GetTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B64F6820052128000E0494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56B64F6A20052128000E0494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56B64F6C20052128000E0494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56B64F6F20052128000E0494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56B64F7120052128000E0494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B64F7220052128000E0494 /* GetTicket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GetTicket.entitlements; sourceTree = "<group>"; };
+		56B64F7720052128000E0494 /* GetTicketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetTicketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B64F7B20052129000E0494 /* GetTicketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTicketTests.swift; sourceTree = "<group>"; };
+		56B64F7D20052129000E0494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B64F8220052129000E0494 /* GetTicketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetTicketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B64F8620052129000E0494 /* GetTicketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTicketUITests.swift; sourceTree = "<group>"; };
+		56B64F8820052129000E0494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B64FBE200529C1000E0494 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		56B64FBF200529C1000E0494 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56B64F6220052128000E0494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B64F7420052128000E0494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B64F7F20052129000E0494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56B64F5C20052128000E0494 = {
+			isa = PBXGroup;
+			children = (
+				56B64F6720052128000E0494 /* GetTicket */,
+				56B64F7A20052129000E0494 /* GetTicketTests */,
+				56B64F8520052129000E0494 /* GetTicketUITests */,
+				56B64F6620052128000E0494 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56B64F6620052128000E0494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56B64F6520052128000E0494 /* GetTicket.app */,
+				56B64F7720052128000E0494 /* GetTicketTests.xctest */,
+				56B64F8220052129000E0494 /* GetTicketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56B64F6720052128000E0494 /* GetTicket */ = {
+			isa = PBXGroup;
+			children = (
+				56B64F6820052128000E0494 /* AppDelegate.swift */,
+				56B64F6A20052128000E0494 /* ViewController.swift */,
+				56B64FBF200529C1000E0494 /* MainViewController.swift */,
+				56B64FBE200529C1000E0494 /* MainViewController.xib */,
+				56B64F6C20052128000E0494 /* Assets.xcassets */,
+				56B64F6E20052128000E0494 /* Main.storyboard */,
+				56B64F7120052128000E0494 /* Info.plist */,
+				56B64F7220052128000E0494 /* GetTicket.entitlements */,
+			);
+			path = GetTicket;
+			sourceTree = "<group>";
+		};
+		56B64F7A20052129000E0494 /* GetTicketTests */ = {
+			isa = PBXGroup;
+			children = (
+				56B64F7B20052129000E0494 /* GetTicketTests.swift */,
+				56B64F7D20052129000E0494 /* Info.plist */,
+			);
+			path = GetTicketTests;
+			sourceTree = "<group>";
+		};
+		56B64F8520052129000E0494 /* GetTicketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56B64F8620052129000E0494 /* GetTicketUITests.swift */,
+				56B64F8820052129000E0494 /* Info.plist */,
+			);
+			path = GetTicketUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56B64F6420052128000E0494 /* GetTicket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56B64F8B20052129000E0494 /* Build configuration list for PBXNativeTarget "GetTicket" */;
+			buildPhases = (
+				56B64F6120052128000E0494 /* Sources */,
+				56B64F6220052128000E0494 /* Frameworks */,
+				56B64F6320052128000E0494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetTicket;
+			productName = GetTicket;
+			productReference = 56B64F6520052128000E0494 /* GetTicket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56B64F7620052128000E0494 /* GetTicketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56B64F8E20052129000E0494 /* Build configuration list for PBXNativeTarget "GetTicketTests" */;
+			buildPhases = (
+				56B64F7320052128000E0494 /* Sources */,
+				56B64F7420052128000E0494 /* Frameworks */,
+				56B64F7520052128000E0494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56B64F7920052128000E0494 /* PBXTargetDependency */,
+			);
+			name = GetTicketTests;
+			productName = GetTicketTests;
+			productReference = 56B64F7720052128000E0494 /* GetTicketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56B64F8120052129000E0494 /* GetTicketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56B64F9120052129000E0494 /* Build configuration list for PBXNativeTarget "GetTicketUITests" */;
+			buildPhases = (
+				56B64F7E20052129000E0494 /* Sources */,
+				56B64F7F20052129000E0494 /* Frameworks */,
+				56B64F8020052129000E0494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56B64F8420052129000E0494 /* PBXTargetDependency */,
+			);
+			name = GetTicketUITests;
+			productName = GetTicketUITests;
+			productReference = 56B64F8220052129000E0494 /* GetTicketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56B64F5D20052128000E0494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ngliao;
+				TargetAttributes = {
+					56B64F6420052128000E0494 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					56B64F7620052128000E0494 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56B64F6420052128000E0494;
+					};
+					56B64F8120052129000E0494 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56B64F6420052128000E0494;
+					};
+				};
+			};
+			buildConfigurationList = 56B64F6020052128000E0494 /* Build configuration list for PBXProject "GetTicket" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56B64F5C20052128000E0494;
+			productRefGroup = 56B64F6620052128000E0494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56B64F6420052128000E0494 /* GetTicket */,
+				56B64F7620052128000E0494 /* GetTicketTests */,
+				56B64F8120052129000E0494 /* GetTicketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56B64F6320052128000E0494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B64F6D20052128000E0494 /* Assets.xcassets in Resources */,
+				56B64FC0200529C1000E0494 /* MainViewController.xib in Resources */,
+				56B64F7020052128000E0494 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B64F7520052128000E0494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B64F8020052129000E0494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56B64F6120052128000E0494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B64FC1200529C1000E0494 /* MainViewController.swift in Sources */,
+				56B64F6B20052128000E0494 /* ViewController.swift in Sources */,
+				56B64F6920052128000E0494 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B64F7320052128000E0494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B64F7C20052129000E0494 /* GetTicketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B64F7E20052129000E0494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B64F8720052129000E0494 /* GetTicketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56B64F7920052128000E0494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56B64F6420052128000E0494 /* GetTicket */;
+			targetProxy = 56B64F7820052128000E0494 /* PBXContainerItemProxy */;
+		};
+		56B64F8420052129000E0494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56B64F6420052128000E0494 /* GetTicket */;
+			targetProxy = 56B64F8320052129000E0494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56B64F6E20052128000E0494 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56B64F6F20052128000E0494 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56B64F8920052129000E0494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56B64F8A20052129000E0494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		56B64F8C20052129000E0494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetTicket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		56B64F8D20052129000E0494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetTicket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		56B64F8F20052129000E0494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetTicketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetTicket.app/Contents/MacOS/GetTicket";
+			};
+			name = Debug;
+		};
+		56B64F9020052129000E0494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetTicketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetTicket.app/Contents/MacOS/GetTicket";
+			};
+			name = Release;
+		};
+		56B64F9220052129000E0494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetTicketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = GetTicket;
+			};
+			name = Debug;
+		};
+		56B64F9320052129000E0494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetTicketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = GetTicket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56B64F6020052128000E0494 /* Build configuration list for PBXProject "GetTicket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B64F8920052129000E0494 /* Debug */,
+				56B64F8A20052129000E0494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56B64F8B20052129000E0494 /* Build configuration list for PBXNativeTarget "GetTicket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B64F8C20052129000E0494 /* Debug */,
+				56B64F8D20052129000E0494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56B64F8E20052129000E0494 /* Build configuration list for PBXNativeTarget "GetTicketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B64F8F20052129000E0494 /* Debug */,
+				56B64F9020052129000E0494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56B64F9120052129000E0494 /* Build configuration list for PBXNativeTarget "GetTicketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B64F9220052129000E0494 /* Debug */,
+				56B64F9320052129000E0494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56B64F5D20052128000E0494 /* Project object */;
+}
