@@ -9,11 +9,11 @@ from fake_useragent import UserAgent
 # 禁用安全请求警告
 from urllib3 import disable_warnings
 from urllib3.exceptions import InsecureRequestWarning
-
 disable_warnings(InsecureRequestWarning)
 
 
 __session = requests.session()
+# 设置不验证SSL，你应该看到了HTTPS
 __session.verify = False
 
 __ua = UserAgent(verify_ssl=False)

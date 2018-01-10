@@ -18,6 +18,7 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         settupViews()
+     
     }
     
     private func settupViews(){
@@ -68,7 +69,7 @@ extension MainViewController{
     // https://www.jianshu.com/p/842896e5de10
     // http://www.skyfox.org/cocoa-macos-sandbox.html
     func getTicketLeftJson(){
-        let url = "/Users/user/Desktop/PythonDemo/Ticket/tickets/ticketLeft.json"
+        let url = "/Users/user/Desktop/LazyTicket/Ticket Python/tickets/ticketLeft.json"
         let mgr = FileManager.default
         if mgr.fileExists(atPath: url) {
             guard let content = FileManager.default.contents(atPath: url) else{
@@ -88,7 +89,7 @@ extension MainViewController{
     }
     
     func getCapthaImage(){
-        let url = "/Users/user/Desktop/PythonDemo/Ticket/captchaImage/catchpaImage.png"
+        let url = "/Users/user/Desktop/LazyTicket/Ticket Python/captchaImage/catchpaImage.png"
         captchaImgv.image = NSImage(contentsOfFile: url)
     }
 }
