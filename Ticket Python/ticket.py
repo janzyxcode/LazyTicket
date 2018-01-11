@@ -26,15 +26,18 @@ import json
 
 def getTrainRquestList():
     startCityCode = cons.getCityCodeWithName('广州南')
-    endCityCode = cons.getCityCodeWithName('宾阳')
-    trainDate = '2018-01-10'
+    endCityCode = cons.getCityCodeWithName('长沙')
+    trainDate = '2018-01-11'
     urlStr = 'https://kyfw.12306.cn/otn/leftTicket/queryZ?leftTicketDTO.train_date=' + trainDate + '&leftTicketDTO.from_station=' + startCityCode + '&leftTicketDTO.to_station=' + endCityCode + '&purpose_codes=ADULT'
     print(urlStr)
     response = ngRequest.getRequest(urlStr)
     # req.add_header('User-Agent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36')
-    dic = response.json()
-    result = dic['data']['result']
-    return decoTrainResponse(result)
+    trainDictList = []
+    if response.status_code == 200:
+        dic = response.json()
+        result = dic['data']['result']
+        trainDictList = decoTrainResponse(result)
+    return trainDictList
 
 
 def decoTrainResponse(result):
@@ -86,18 +89,18 @@ def decoTrainResponse(result):
         # for n in ti:
         #     print('[%s] %s' %(c,n))
         #     c += 1
-    fileName = '/Users/user/Desktop/LazyTicket/Ticket Python/tickets/ticketLeft.json'
-    with open(fileName, 'w', encoding='utf-8') as file_obj:
-        json.dump(trainDictList, file_obj)
+
+    fileName = '/Users/liaonaigang/Desktop/LazyTicket/Ticket Python/tickets/ticketLeft.json'
+    cons.saveData(fileName, trainDictList)
     return trainDictList
 
 
 
-cons.getStationName()
-login.getCaptchaImge()
+# cons.getStationName()
+# login.getCaptchaImge()
 # login.captchaCheck()
 
-trainList = getTrainRquestList()
+# trainList = getTrainRquestList()
 
 
 # for item in trainList:

@@ -2,6 +2,8 @@
 
 
 import requests
+import json
+
 
 # 一个提供UserAgent的库，不用自己再去搞那么多了，方便
 from fake_useragent import UserAgent
@@ -40,4 +42,13 @@ def getRequest(urlStr):
     return __session.get(urlStr, headers=__headers)
 
 def postRequest(urlStr,data):
-    return __session.post(urlStr, headers=__headers, data=data)
+    response = __session.post(urlStr, headers=__headers, data=data)
+    print(response.text)
+    if response.status_code == 200:
+        dic = json.loads(response.text)
+        #系统维护时间
+        if dic['result_code'] == -4:
+            print(dic['result_message'])
+        else:
+            return dic
+    return None
