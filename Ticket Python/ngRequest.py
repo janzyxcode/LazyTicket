@@ -22,10 +22,16 @@ __ua = UserAgent(verify_ssl=False)
 
 # 请求头，最最基础的反爬伪装
 __headers = {
-    "User-Agent": __ua.random,
-    "Host":"kyfw.12306.cn",
-    "Referer":"https://kyfw.12306.cn/otn/passport?redirect=/otn/"
+#         "User-Agent": __ua.random,
+#         "Host": "kyfw.12306.cn",
+#         "Referer": "https://kyfw.12306.cn/otn/passport?redirect=/otn/"
+# "Origin": "https://kyfw.12306.cn",
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36",
+        "Referer": "https://kyfw.12306.cn/otn/login/init",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "Accept": "application/json, text/javascript, */*; q=0.01"
 }
+
 
 # class RequestSingleton(type):
 #     _instance = {}
@@ -41,14 +47,24 @@ __headers = {
 def getRequest(urlStr):
     return __session.get(urlStr, headers=__headers)
 
+# {"result_message":"系统维护时间","result_code":-4}
+# {"result_message":"用户未登录","result_code":1}
 def postRequest(urlStr,data):
     response = __session.post(urlStr, headers=__headers, data=data)
-    print(response.text)
     if response.status_code == 200:
         dic = json.loads(response.text)
+        print(dic)
         #系统维护时间
         if dic['result_code'] == -4:
             print(dic['result_message'])
         else:
             return dic
+    return None
+
+def postLoginRequest(urlStr,data):
+    response = __session.post(urlStr, headers=__headers, data=data)
+    # print(response.content)
+    if response.status_code == 200:
+        d = response.json()
+        return d['result_message']
     return None

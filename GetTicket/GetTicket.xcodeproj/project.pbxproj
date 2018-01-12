@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		56B64F6920052128000E0494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F6820052128000E0494 /* AppDelegate.swift */; };
-		56B64F6B20052128000E0494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F6A20052128000E0494 /* ViewController.swift */; };
 		56B64F6D20052128000E0494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B64F6C20052128000E0494 /* Assets.xcassets */; };
-		56B64F7020052128000E0494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B64F6E20052128000E0494 /* Main.storyboard */; };
 		56B64F7C20052129000E0494 /* GetTicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F7B20052129000E0494 /* GetTicketTests.swift */; };
 		56B64F8720052129000E0494 /* GetTicketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64F8620052129000E0494 /* GetTicketUITests.swift */; };
 		56B64FC0200529C1000E0494 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B64FBE200529C1000E0494 /* MainViewController.xib */; };
 		56B64FC1200529C1000E0494 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B64FBF200529C1000E0494 /* MainViewController.swift */; };
+		CEBE9D162008D22B002FD5FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9D142008D22A002FD5FE /* Main.storyboard */; };
+		CEBE9D172008D22B002FD5FE /* ViewController 18-31-44-439.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9D152008D22B002FD5FE /* ViewController 18-31-44-439.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,7 @@
 /* Begin PBXFileReference section */
 		56B64F6520052128000E0494 /* GetTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B64F6820052128000E0494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56B64F6A20052128000E0494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56B64F6C20052128000E0494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56B64F6F20052128000E0494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56B64F7120052128000E0494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56B64F7220052128000E0494 /* GetTicket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GetTicket.entitlements; sourceTree = "<group>"; };
 		56B64F7720052128000E0494 /* GetTicketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetTicketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +48,8 @@
 		56B64F8820052129000E0494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56B64FBE200529C1000E0494 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		56B64FBF200529C1000E0494 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CEBE9D142008D22A002FD5FE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CEBE9D152008D22B002FD5FE /* ViewController 18-31-44-439.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController 18-31-44-439.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				56B64F6820052128000E0494 /* AppDelegate.swift */,
-				56B64F6A20052128000E0494 /* ViewController.swift */,
 				56B64FBF200529C1000E0494 /* MainViewController.swift */,
 				56B64FBE200529C1000E0494 /* MainViewController.xib */,
+				CEBE9D142008D22A002FD5FE /* Main.storyboard */,
+				CEBE9D152008D22B002FD5FE /* ViewController 18-31-44-439.swift */,
 				56B64F6C20052128000E0494 /* Assets.xcassets */,
-				56B64F6E20052128000E0494 /* Main.storyboard */,
 				56B64F7120052128000E0494 /* Info.plist */,
 				56B64F7220052128000E0494 /* GetTicket.entitlements */,
 			);
@@ -200,6 +200,9 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
 							com.apple.Sandbox = {
 								enabled = 0;
 							};
@@ -244,7 +247,7 @@
 			files = (
 				56B64F6D20052128000E0494 /* Assets.xcassets in Resources */,
 				56B64FC0200529C1000E0494 /* MainViewController.xib in Resources */,
-				56B64F7020052128000E0494 /* Main.storyboard in Resources */,
+				CEBE9D162008D22B002FD5FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBE9D172008D22B002FD5FE /* ViewController 18-31-44-439.swift in Sources */,
 				56B64FC1200529C1000E0494 /* MainViewController.swift in Sources */,
-				56B64F6B20052128000E0494 /* ViewController.swift in Sources */,
 				56B64F6920052128000E0494 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,17 +308,6 @@
 			targetProxy = 56B64F8320052129000E0494 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		56B64F6E20052128000E0494 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56B64F6F20052128000E0494 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		56B64F8920052129000E0494 /* Debug */ = {
@@ -430,9 +422,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YHR9287K7V;
+				IBC_FLATTEN_NIBS = YES;
+				IBSC_FLATTEN_NIBS = YES;
 				INFOPLIST_FILE = GetTicket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicket;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicket.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -444,9 +440,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YHR9287K7V;
+				IBC_FLATTEN_NIBS = YES;
+				IBSC_FLATTEN_NIBS = YES;
 				INFOPLIST_FILE = GetTicket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicket;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = ngliao.GetTicket.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};

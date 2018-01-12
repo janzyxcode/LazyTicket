@@ -20,7 +20,7 @@ class MainViewController: NSViewController {
         super.viewDidLoad()
         settupViews()
         
-        timer = Timer(timeInterval: 5, target: self, selector: #selector(runForInfo), userInfo: nil, repeats: true)
+        timer = Timer(timeInterval: 0.5, target: self, selector: #selector(runForInfo), userInfo: nil, repeats: true)
         RunLoop.main.add(timer, forMode: .commonModes)
     }
     
@@ -41,13 +41,20 @@ class MainViewController: NSViewController {
         noti.hasActionButton = true
         noti.soundName = NSUserNotificationDefaultSoundName
         NSUserNotificationCenter.default.deliver(noti)
+        NSUserNotificationCenter.default.delegate = self
         print("send noti")
     }
     
     @IBAction func captchaActionSelect(_ sender: NSButton) {
+
         sender.isContinuous = !sender.isContinuous
         sender.title = sender.isContinuous == true ? "1" : "0"
-        captchaSelectList[sender.tag] = sender.isContinuous
+        
+        let attr = NSMutableAttributedString(attributedString: sender.attributedTitle)
+        attr.addAttributes([NSAttributedStringKey.font: NSFont.boldSystemFont(ofSize: 30),NSAttributedStringKey.foregroundColor: NSColor.red], range: NSMakeRange(0, sender.title.count))
+        sender.attributedTitle = attr
+
+        captchaSelectList[sender.tag] = sender.state.rawValue == 0 ? false : true
     }
     
     @IBAction func loginAction(_ sender: Any) {
@@ -68,7 +75,7 @@ class MainViewController: NSViewController {
             return
         }
         
-        let url = "/Users/liaonaigang/Desktop/LazyTicket/Ticket Python/cons/config.json"
+        let url = "/Users/user/Desktop/LazyTicket/Ticket Python/cons/config.json"
         let mgr = FileManager.default
         if mgr.fileExists(atPath: url) {
             guard let content = FileManager.default.contents(atPath: url) else{
@@ -76,10 +83,14 @@ class MainViewController: NSViewController {
             }
             do {
                 let list = try JSONSerialization.jsonObject(with: content, options: .mutableLeaves)
-                guard var dict = list as? [String: String] else{
+                guard var dict = list as? [String: Any] else{
                     return
                 }
                 dict["capthaPoistions"] = str
+                
+                
+//                dict["capthaPoistions"] = ""
+//                dict["authUamtk"] = ""
                 let data = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
                 if let dataStr = NSString(data: data, encoding: String.Encoding.utf8.rawValue){
                     try dataStr.write(toFile: url, atomically: false, encoding: String.Encoding.utf8.rawValue)
@@ -99,7 +110,7 @@ extension MainViewController{
     // https://www.jianshu.com/p/842896e5de10
     // http://www.skyfox.org/cocoa-macos-sandbox.html
     func getTicketLeftJson(){
-        let url = "/Users/liaonaigang/Desktop/LazyTicket/Ticket Python/tickets/ticketLeft.json"
+        let url = "/Users/user/Desktop/LazyTicket/Ticket Python/tickets/ticketLeft.json"
         let mgr = FileManager.default
         if mgr.fileExists(atPath: url) {
             guard let content = FileManager.default.contents(atPath: url) else{
@@ -119,11 +130,19 @@ extension MainViewController{
     }
     
     func getCapthaImage(){
-        let url = "/Users/liaonaigang/Desktop/LazyTicket/Ticket Python/captchaImage/catchpaImage.png"
+        let url = "/Users/user/Desktop/LazyTicket/Ticket Python/captchaImage/catchpaImage.png"
         captchaImgv.image = NSImage(contentsOfFile: url)
     }
 }
 
+extension MainViewController:NSUserNotificationCenterDelegate{
+    func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool {
+        return true
+    }
+    func userNotificationCenter(_ center: NSUserNotificationCenter, didActivate notification: NSUserNotification) {
+        print("====")
+    }
+}
 
 extension MainViewController:NSTableViewDelegate,NSTableViewDataSource{
     func numberOfRows(in tableView: NSTableView) -> Int {

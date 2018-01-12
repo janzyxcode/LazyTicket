@@ -3,10 +3,16 @@
 import re
 import ngRequest
 import json
+import os
 
+
+currentWorkPath = os.getcwd()
 cityNameDict = {}
 cityCodeDict = {}
-configPath = '/Users/liaonaigang/Desktop/LazyTicket/Ticket Python/cons/config.json'
+
+configPath = currentWorkPath + '/cons/config.json'
+captchaPath = currentWorkPath + '/captchaImage/catchpaImage.png'
+trainDicListPath = currentWorkPath + '/tickets/ticketLeft.json'
 
 def getStationName():
     url = 'https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9043'
@@ -44,12 +50,12 @@ def readConfig():
         data = json.load(file_obj)
     return data
 
+def saveConfig(key,value):
+    config = readConfig()
+    config[key] = value
+    saveData(configPath,config)
 
-def getCaptchaImagePoistions():
-    return readConfig()['capthaPoistions']
 
-def resetCaptchaImagePostions():
-    saveData(configPath,{'capthaPoistions':''})
 
 
 

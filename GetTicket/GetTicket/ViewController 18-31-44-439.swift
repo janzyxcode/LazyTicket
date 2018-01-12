@@ -20,7 +20,10 @@ class ViewController: NSViewController {
         settupviews()
     }
     
+
 }
+
+
 
 extension ViewController{
     func settupviews(){

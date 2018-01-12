@@ -7,27 +7,17 @@ import ngRequest
 import json
 
 
-# 当使用urllib.urlopen打开一个 https 链接时，会验证一次 SSL 证书。而当目标网站使用的是自签名的证书时就会抛出此异常。
-# 解决方案有如下两个：
-# 1）使用ssl创建未经验证的上下文，在urlopen中传入上下文参数
-# context = ssl._create_unverified_context()
-# webPage = urllib.request.urlopen(req,context=context)
-# 2）全局取消证书验证
-# ssl._create_default_https_context = ssl._create_unverified_context
-
-# ssl._create_default_https_context = ssl._create_unverified_context()
-
 # 同时再结合登录,购票等流程,通过自动判断是否有票,如果无票就继续刷新,直到有票之后自动登录下单后通过短信或者电话等方式全自动联系购票人手机就可以
 
 # 联众-收费
 
-
+# https://www.itsvse.com/thread-4113-1-1.html
 
 
 def getTrainRquestList():
     startCityCode = cons.getCityCodeWithName('广州南')
     endCityCode = cons.getCityCodeWithName('长沙')
-    trainDate = '2018-01-11'
+    trainDate = '2018-01-13'
     urlStr = 'https://kyfw.12306.cn/otn/leftTicket/queryZ?leftTicketDTO.train_date=' + trainDate + '&leftTicketDTO.from_station=' + startCityCode + '&leftTicketDTO.to_station=' + endCityCode + '&purpose_codes=ADULT'
     print(urlStr)
     response = ngRequest.getRequest(urlStr)
@@ -35,6 +25,7 @@ def getTrainRquestList():
     trainDictList = []
     if response.status_code == 200:
         dic = response.json()
+        # print(dic)
         result = dic['data']['result']
         trainDictList = decoTrainResponse(result)
     return trainDictList
@@ -45,7 +36,7 @@ def decoTrainResponse(result):
     print('train list len ', len(result))
     for item in result:
         ti = item.split('|')
-
+        print(item)
         dict = {}
         dict["状态"] = ti[1]
         # dict[""] = ti[2]
@@ -90,19 +81,19 @@ def decoTrainResponse(result):
         #     print('[%s] %s' %(c,n))
         #     c += 1
 
-    fileName = '/Users/liaonaigang/Desktop/LazyTicket/Ticket Python/tickets/ticketLeft.json'
-    cons.saveData(fileName, trainDictList)
+    cons.saveData(cons.trainDicListPath, trainDictList)
     return trainDictList
 
 
+# https://www.cnblogs.com/russellwang/p/4174886.html
+# https://www.jianshu.com/p/72d0417667e6
+# https://www.itsvse.com/thread-4113-1-1.html
+# http://blog.csdn.net/javamanjosen/article/details/72676610
 
-# cons.getStationName()
-# login.getCaptchaImge()
-# login.captchaCheck()
+# 联系人
+# https://kyfw.12306.cn/otn/confirmPassenger/getPassengerDTOs
 
 # trainList = getTrainRquestList()
-
-
 # for item in trainList:
 #     print(item)
 
